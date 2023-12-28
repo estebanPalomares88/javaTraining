@@ -1,4 +1,4 @@
-package org.javaTraining.stepdef;
+package org.javaTraining.stepdef.api;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

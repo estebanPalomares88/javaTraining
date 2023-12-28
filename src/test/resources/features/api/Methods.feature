@@ -20,7 +20,7 @@ Feature: Test the API methods
   @METHODS_FAIL
   Scenario Outline:  Test http methods in fail scenarios
     When user "<method>" the "<endpoint>" endpoint
-    Then user verify the 40 status code
+    Then user verify the 405 status code
 
     Examples:
       | method  | endpoint |

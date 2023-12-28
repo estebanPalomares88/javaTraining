@@ -2,7 +2,7 @@ package org.javaTraining.api.actions;
 
 import io.restassured.response.Response;
 import net.serenitybdd.core.steps.UIInteractions;
-import org.javaTraining.api.rest.dto.HttpClient;
+import org.javaTraining.api.rest.HttpClient;
 
 public class MethodsActions extends UIInteractions {
 
