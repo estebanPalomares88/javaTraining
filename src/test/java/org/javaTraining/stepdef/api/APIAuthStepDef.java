@@ -6,7 +6,7 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import net.serenitybdd.annotations.Steps;
 import org.javaTraining.api.actions.APIAuthActions;
-import org.javaTraining.api.constants.EnvironmentsConstants;
+import org.javaTraining.api.constants.EnvironmentsAPIConstants;
 import org.javaTraining.api.rest.dto.APIAuthDto;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -20,7 +20,7 @@ public class APIAuthStepDef {
 
     @Given("I have a AUTH Request")
     public void iHaveAAUTHRequest() {
-        this.token = EnvironmentsConstants.API_TOKEN;
+        this.token = EnvironmentsAPIConstants.API_TOKEN;
     }
 
     @When("I GET the Bearer endpoint status {int}")
