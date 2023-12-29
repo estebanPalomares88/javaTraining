@@ -91,13 +91,7 @@
                 <configuration>
                     <includes>
                         <include>**/*Test.java</include>
-                        <include>**/Test*.java</include>
-                        <include>**/*TestSuite.java</include>
-                        <include>**/When*.java</include>
                     </includes>
-                    <systemPropertyVariables>
-                        <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
-                    </systemPropertyVariables>
                     <parallel>classes</parallel>
                     <parallel>methods</parallel>
                     <useUnlimitedThreads>true</useUnlimitedThreads>
@@ -137,7 +131,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
 </project>

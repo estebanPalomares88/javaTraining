@@ -4,14 +4,14 @@ import io.restassured.http.ContentType;
 import io.restassured.mapper.ObjectMapperType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.javaTraining.api.constants.EnvironmentsConstants;
+import org.javaTraining.api.constants.EnvironmentsAPIConstants;
 
 import static net.serenitybdd.rest.SerenityRest.*;
 
 public class HttpClient {
 
     public static Response getMethod(String endPoint,Object payload) {
-        final String baseUri = EnvironmentsConstants.API_ENDPOINT;
+        final String baseUri = EnvironmentsAPIConstants.API_ENDPOINT;
         RequestSpecification requestSpecification = given()
                 .baseUri(baseUri)
                 .basePath(endPoint)
@@ -21,7 +21,7 @@ public class HttpClient {
         return requestSpecification.when().get();
     }
     public static Response getMethod(String endPoint) {
-        final String baseUri = EnvironmentsConstants.API_ENDPOINT;
+        final String baseUri = EnvironmentsAPIConstants.API_ENDPOINT;
         RequestSpecification requestSpecification = given()
                 .baseUri(baseUri)
                 .basePath(endPoint)
@@ -31,7 +31,7 @@ public class HttpClient {
     }
 
     public static Response getMethodWithToken(String token) {
-        final String baseUri = EnvironmentsConstants.API_ENDPOINT;
+        final String baseUri = EnvironmentsAPIConstants.API_ENDPOINT;
         RequestSpecification requestSpecification = given()
                 .baseUri(baseUri)
                 .basePath("bearer")
@@ -42,7 +42,7 @@ public class HttpClient {
     }
 
     public static Response postMethod(String endPoint,Object payload) {
-        final String baseUri = EnvironmentsConstants.API_ENDPOINT;
+        final String baseUri = EnvironmentsAPIConstants.API_ENDPOINT;
         RequestSpecification requestSpecification = given()
                 .baseUri(baseUri)
                 .basePath(endPoint)
@@ -53,7 +53,7 @@ public class HttpClient {
     }
 
     public static Response postMethod(String endPoint) {
-        final String baseUri = EnvironmentsConstants.API_ENDPOINT;
+        final String baseUri = EnvironmentsAPIConstants.API_ENDPOINT;
         RequestSpecification requestSpecification = given()
                 .baseUri(baseUri)
                 .basePath(endPoint)
@@ -63,7 +63,7 @@ public class HttpClient {
     }
 
     public static Response putMethod(String endPoint,Object payload) {
-        final String baseUri = EnvironmentsConstants.API_ENDPOINT;
+        final String baseUri = EnvironmentsAPIConstants.API_ENDPOINT;
         RequestSpecification requestSpecification = given()
                 .baseUri(baseUri)
                 .basePath(endPoint)
@@ -74,7 +74,7 @@ public class HttpClient {
     }
 
     public static Response putMethod(String endPoint) {
-        final String baseUri = EnvironmentsConstants.API_ENDPOINT;
+        final String baseUri = EnvironmentsAPIConstants.API_ENDPOINT;
         RequestSpecification requestSpecification = given()
                 .baseUri(baseUri)
                 .basePath(endPoint)
@@ -84,7 +84,7 @@ public class HttpClient {
     }
 
     public static Response patchMethod(String endPoint,Object payload) {
-        final String baseUri = EnvironmentsConstants.API_ENDPOINT;
+        final String baseUri = EnvironmentsAPIConstants.API_ENDPOINT;
         RequestSpecification requestSpecification = given()
                 .baseUri(baseUri)
                 .basePath(endPoint)
@@ -94,7 +94,7 @@ public class HttpClient {
         return requestSpecification.when().patch();
     }
     public static Response patchMethod(String endPoint) {
-        final String baseUri = EnvironmentsConstants.API_ENDPOINT;
+        final String baseUri = EnvironmentsAPIConstants.API_ENDPOINT;
         RequestSpecification requestSpecification = given()
                 .baseUri(baseUri)
                 .basePath(endPoint)
@@ -104,7 +104,7 @@ public class HttpClient {
     }
 
     public static Response deleteMethod(String endPoint,Object payload) {
-        final String baseUri = EnvironmentsConstants.API_ENDPOINT;
+        final String baseUri = EnvironmentsAPIConstants.API_ENDPOINT;
         RequestSpecification requestSpecification = given()
                 .baseUri(baseUri)
                 .basePath(endPoint)
@@ -115,7 +115,7 @@ public class HttpClient {
     }
 
     public static Response deleteMethod(String endPoint) {
-        final String baseUri = EnvironmentsConstants.API_ENDPOINT;
+        final String baseUri = EnvironmentsAPIConstants.API_ENDPOINT;
         RequestSpecification requestSpecification = given()
                 .baseUri(baseUri)
                 .basePath(endPoint)

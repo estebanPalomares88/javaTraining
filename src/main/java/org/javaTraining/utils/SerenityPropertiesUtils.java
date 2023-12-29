@@ -1,4 +1,4 @@
-package org.javaTraining.api.utils;
+package org.javaTraining.utils;
 
 import net.serenitybdd.model.environment.EnvironmentSpecificConfiguration;
 import net.thucydides.model.environment.SystemEnvironmentVariables;
